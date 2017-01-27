@@ -1,1 +1,53 @@
-css
+body{
+    display: flex;
+    flex-direction: row;
+    background-color: peachpuff;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    background-color: green;
+    width: 70%;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 0px 10px 0px;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+aside {
+    display: none;
+}
+
+@media screen and (min-width: 640px) {
+    aside {
+        background-color: blue;
+        width: 20%;
+        height: 100%;
+        display: block;
+    }
+}
